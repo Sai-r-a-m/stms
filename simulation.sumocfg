@@ -1,0 +1,17 @@
+<configuration>
+    <input>
+        <net-file value="junction.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <!-- No tl.add.xml needed; RL agent will control the traffic light -->
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="1000"/>
+    </time>
+
+    <report>
+        <verbose value="true"/>
+        <no-step-log value="true"/>
+    </report>
+</configuration>
