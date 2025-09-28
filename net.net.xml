@@ -1,21 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-09-28 14:11:14 by Eclipse SUMO netconvert Version 1.24.0
+<!-- generated on 2025-09-28 14:11:18 by Eclipse SUMO netconvert Version 1.24.0
 <netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <node-files value="nodes.nod.xml"/>
-        <edge-files value="edges.edg.xml"/>
+        <sumo-net-file value="junction.net.xml"/>
     </input>
 
-    <output>
-        <output-file value="junction.net.xml"/>
-    </output>
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.avoid-overlap value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+    <report>
+        <verbose value="true"/>
+    </report>
 
 </netconvertConfiguration>
 -->
 
-<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+<net version="1.20" junctionCornerDetail="5" limitTurnSpeed="5.50" avoidOverlap="0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
 
     <location netOffset="50.00,50.00" convBoundary="0.00,0.00,100.00,100.00" origBoundary="-50.00,-50.00,50.00,50.00" projParameter="!"/>
 
@@ -154,14 +172,10 @@
     </edge>
 
     <tlLogic id="C" type="static" programID="0" offset="0">
-        <phase duration="42" state="GGGGggrrrrrrrrrrrrrrrrrr"/>
-        <phase duration="3"  state="yyyyyyrrrrrrrrrrrrrrrrrr"/>
-        <phase duration="42" state="rrrrrrGGGGggrrrrrrrrrrrr"/>
-        <phase duration="3"  state="rrrrrryyyyyyrrrrrrrrrrrr"/>
-        <phase duration="42" state="rrrrrrrrrrrrGGGGggrrrrrr"/>
-        <phase duration="3"  state="rrrrrrrrrrrryyyyyyrrrrrr"/>
-        <phase duration="42" state="rrrrrrrrrrrrrrrrrrGGGGgg"/>
-        <phase duration="3"  state="rrrrrrrrrrrrrrrrrryyyyyy"/>
+        <phase duration="42" state="GGGGggrrrrrrGGGGggrrrrrr"/>
+        <phase duration="3"  state="yyyyyyrrrrrryyyyyyrrrrrr"/>
+        <phase duration="42" state="rrrrrrGGGGggrrrrrrGGGGgg"/>
+        <phase duration="3"  state="rrrrrryyyyyyrrrrrryyyyyy"/>
     </tlLogic>
 
     <junction id="C" type="traffic_light" x="50.00" y="50.00" incLanes="N_C_0 N_C_1 N_C_2 E_C_0 E_C_1 E_C_2 S_C_0 S_C_1 S_C_2 W_C_0 W_C_1 W_C_2" intLanes=":C_0_0 :C_1_0 :C_1_1 :C_1_2 :C_24_0 :C_25_0 :C_6_0 :C_7_0 :C_7_1 :C_7_2 :C_26_0 :C_27_0 :C_12_0 :C_13_0 :C_13_1 :C_13_2 :C_28_0 :C_29_0 :C_18_0 :C_19_0 :C_19_1 :C_19_2 :C_30_0 :C_31_0" shape="40.40,63.60 59.60,63.60 60.04,61.38 60.60,60.60 61.38,60.04 62.38,59.71 63.60,59.60 63.60,40.40 61.38,39.96 60.60,39.40 60.04,38.62 59.71,37.62 59.60,36.40 40.40,36.40 39.96,38.62 39.40,39.40 38.62,39.96 37.62,40.29 36.40,40.40 36.40,59.60 38.62,60.04 39.40,60.60 39.96,61.38 40.29,62.38">
