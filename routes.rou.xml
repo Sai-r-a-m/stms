@@ -1,35 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <routes>
-    <!-- Vehicle types -->
-    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="15"/>
-    <vType id="truck" accel="1.5" decel="3.0" sigma="0.5" length="12" maxSpeed="10"/>
-    <vType id="bike" accel="3.0" decel="5.0" sigma="0.5" length="2" maxSpeed="20"/>
-    
-    <!-- Routes: straight -->
+    <!-- Vehicle Types -->
+    <vType id="car" accel="2.6" decel="4.5" sigma="0.5" length="5" maxSpeed="14" color="1,0,0"/>
+    <vType id="truck" accel="1.2" decel="4.0" sigma="0.5" length="8" maxSpeed="10" color="0,1,0"/>
+    <vType id="bike" accel="2.0" decel="4.5" sigma="0.5" length="2" maxSpeed="8" color="0,0,1"/>
+
+    <!-- Routes -->
     <route id="north_south" edges="N_C C_S"/>
     <route id="south_north" edges="S_C C_N"/>
     <route id="east_west" edges="E_C C_W"/>
     <route id="west_east" edges="W_C C_E"/>
-    
-    <!-- Routes: turns -->
-    <route id="north_east" edges="N_C C_E"/>
-    <route id="north_west" edges="N_C C_W"/>
-    <route id="south_east" edges="S_C C_E"/>
-    <route id="south_west" edges="S_C C_W"/>
-    <route id="east_north" edges="E_C C_N"/>
-    <route id="east_south" edges="E_C C_S"/>
-    <route id="west_north" edges="W_C C_N"/>
-    <route id="west_south" edges="W_C C_S"/>
-    
-    <!-- Randomly generated vehicles -->
-    <!-- You can generate hundreds of vehicles programmatically; here is an example -->
+
+    <!-- Vehicles -->
     <vehicle id="veh0" type="car" route="north_south" depart="0"/>
     <vehicle id="veh1" type="truck" route="south_north" depart="2"/>
     <vehicle id="veh2" type="bike" route="east_west" depart="4"/>
     <vehicle id="veh3" type="car" route="west_east" depart="6"/>
-    <vehicle id="veh4" type="car" route="north_east" depart="8"/>
-    <vehicle id="veh5" type="truck" route="south_west" depart="10"/>
-    <vehicle id="veh6" type="bike" route="east_south" depart="12"/>
-    <vehicle id="veh7" type="car" route="west_north" depart="14"/>
-    
-    <!-- Continue programmatically up to 200+ vehicles for realism -->
+    <vehicle id="veh4" type="car" route="north_south" depart="8"/>
+    <vehicle id="veh5" type="truck" route="south_north" depart="10"/>
+    <vehicle id="veh6" type="bike" route="east_west" depart="12"/>
+    <vehicle id="veh7" type="car" route="west_east" depart="14"/>
 </routes>

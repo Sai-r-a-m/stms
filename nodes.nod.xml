@@ -1,10 +1,8 @@
 <nodes>
-    <!-- Entry/exit nodes -->
-    <node id="N" x="50" y="100" type="priority"/>
-    <node id="S" x="50" y="0" type="priority"/>
-    <node id="E" x="100" y="50" type="priority"/>
-    <node id="W" x="0" y="50" type="priority"/>
-    
-    <!-- Central junction -->
-    <node id="C" x="50" y="50" type="traffic_light"/>
+    <node id="N" x="0.0" y="50.0" type="priority"/>
+    <node id="S" x="0.0" y="-50.0" type="priority"/>
+    <node id="E" x="50.0" y="0.0" type="priority"/>
+    <node id="W" x="-50.0" y="0.0" type="priority"/>
+    <node id="C" x="0.0" y="0.0" type="traffic_light"/>
 </nodes>
+
