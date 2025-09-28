@@ -14,4 +14,3 @@
     <edge id="W_C" from="W" to="C" numLanes="3" speed="13.9"/>
     <edge id="C_W" from="C" to="W" numLanes="3" speed="13.9"/>
 </edges>
-

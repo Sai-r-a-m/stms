@@ -6,18 +6,19 @@
     <vType id="bike" accel="2.0" decel="4.5" sigma="0.5" length="2" maxSpeed="8" color="0,0,1"/>
 
     <!-- Routes -->
-    <route id="north_south" edges="N_C C_S"/>
-    <route id="south_north" edges="S_C C_N"/>
-    <route id="east_west" edges="E_C C_W"/>
-    <route id="west_east" edges="W_C C_E"/>
+    <route id="N_left" edges="N_C C_W"/>
+    <route id="N_straight" edges="N_C C_S"/>
+    <route id="N_right" edges="N_C C_E"/>
 
-    <!-- Vehicles -->
-    <vehicle id="veh0" type="car" route="north_south" depart="0"/>
-    <vehicle id="veh1" type="truck" route="south_north" depart="2"/>
-    <vehicle id="veh2" type="bike" route="east_west" depart="4"/>
-    <vehicle id="veh3" type="car" route="west_east" depart="6"/>
-    <vehicle id="veh4" type="car" route="north_south" depart="8"/>
-    <vehicle id="veh5" type="truck" route="south_north" depart="10"/>
-    <vehicle id="veh6" type="bike" route="east_west" depart="12"/>
-    <vehicle id="veh7" type="car" route="west_east" depart="14"/>
+    <route id="S_left" edges="S_C C_E"/>
+    <route id="S_straight" edges="S_C C_N"/>
+    <route id="S_right" edges="S_C C_W"/>
+
+    <route id="E_left" edges="E_C C_N"/>
+    <route id="E_straight" edges="E_C C_W"/>
+    <route id="E_right" edges="E_C C_S"/>
+
+    <route id="W_left" edges="W_C C_S"/>
+    <route id="W_straight" edges="W_C C_E"/>
+    <route id="W_right" edges="W_C C_N"/>
 </routes>

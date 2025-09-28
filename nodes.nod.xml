@@ -5,4 +5,3 @@
     <node id="W" x="-50.0" y="0.0" type="priority"/>
     <node id="C" x="0.0" y="0.0" type="traffic_light"/>
 </nodes>
-
